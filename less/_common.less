@@ -1,0 +1,75 @@
+// init
+html,
+body,
+ul,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  text-align: left;
+}
+img {
+  border: none;
+}
+
+// fonts
+
+@weight-normal: 300;
+@weight-bold: 700;
+
+// elemets
+
+.text-overflow (@v: ellipsis) {
+  text-overflow: @v;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.banish () {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// color
+
+@black: #424242;
+@blue: #0089ff;
+@gray-light: #ddd;
+
+// screen
+
+@pc: 1040px;
+@pc-small: 800px;
+@sp: 600px;
+@sp-middle: 420px;
+@sp-small: 320px;
+
+@pc-wide: 640px;
+
+
+// common
+
+body {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "Helvetica", "Arial", sans-serif;
+  color: @black;
+  font-weight: @weight-normal;
+}
+a {
+  color: @black;
+  &:hover {
+    color: @blue;
+  }
+}
