@@ -58,10 +58,16 @@
 .intro {
   text-align: center;
   font-size: 16px;
+  @media screen and (max-width:@sp-small) {
+    font-size: 14px;
+  }
   p {
     font-size: 24px;
     line-height: 1.4;
     margin: 40px 0;
+    @media screen and (max-width:@sp-small) {
+      font-size: 20px;
+    }
   }
   dt {
     line-height: 2;
@@ -89,6 +95,9 @@
   border-bottom: 1px solid @gray-light;
   @media screen and (max-width:@pc-small) {
     padding: 0 8px;
+  }
+  @media screen and (max-width:@sp-small) {
+    font-size: 14px;
   }
   p {
     &:not(:last-child) {
@@ -121,6 +130,15 @@
     margin-bottom: 16px;
     font-size: 20px;
     line-height: 1;
+    @media screen and (max-width:@sp-small) {
+      font-size: 16px;
+    }
+  }
+  dd {
+    font-size: 16px;
+    @media screen and (max-width:@sp-small) {
+      font-size: 14px;
+    }
   }
   iframe {
     margin-top: 24px;
