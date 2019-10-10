@@ -108,10 +108,20 @@ a:hover {
   text-align: center;
   font-size: 16px;
 }
+@media screen and (max-width: 320px) {
+  .intro {
+    font-size: 14px;
+  }
+}
 .intro p {
   font-size: 24px;
   line-height: 1.4;
   margin: 40px 0;
+}
+@media screen and (max-width: 320px) {
+  .intro p {
+    font-size: 20px;
+  }
 }
 .intro dt {
   line-height: 2;
@@ -139,6 +149,11 @@ a:hover {
 @media screen and (max-width: 680px) {
   .write {
     padding: 0 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .write {
+    font-size: 14px;
   }
 }
 .write p:not(:last-child) {
@@ -173,6 +188,19 @@ a:hover {
   margin-bottom: 16px;
   font-size: 20px;
   line-height: 1;
+}
+@media screen and (max-width: 320px) {
+  .access dt {
+    font-size: 16px;
+  }
+}
+.access dd {
+  font-size: 16px;
+}
+@media screen and (max-width: 320px) {
+  .access dd {
+    font-size: 14px;
+  }
 }
 .access iframe {
   margin-top: 24px;
