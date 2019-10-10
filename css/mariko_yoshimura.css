@@ -39,6 +39,12 @@ a:hover {
   font-weight: 300;
   width: 600px;
 }
+@media screen and (max-width: 680px) {
+  .layout {
+    width: calc(100% - 32px);
+    overflow: hidden;
+  }
+}
 .top {
   padding-top: 48px;
   text-align: center;
@@ -51,13 +57,22 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b9bac2', endColorstr='#00b9bac2', GradientType=0);
   /* IE6-9 */
 }
+@media screen and (max-width: 680px) {
+  .top {
+    padding: 48px 16px 0;
+  }
+}
 .top img {
   width: 480px;
   height: auto;
   vertical-align: middle;
 }
-.top h1 span,
-.top h2 span {
+@media screen and (max-width: 680px) {
+  .top img {
+    width: 100%;
+  }
+}
+.top span {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
 }
@@ -100,19 +115,27 @@ a:hover {
 .intro dd:nth-child(2n) {
   margin-bottom: 40px;
 }
-.message {
-  font-size: 16px;
-}
 .write {
   padding: 0 10px;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 98%, #ddd 98%, #ddd 100%);
   background-size: 100% 2.4em;
+  font-size: 16px;
   line-height: 2.4;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
+@media screen and (max-width: 680px) {
+  .write {
+    padding: 0 8px;
+  }
+}
 .write p:not(:last-child) {
   margin-bottom: 2.4em;
+}
+@media screen and (max-width: 600px) {
+  .write .br {
+    display: none;
+  }
 }
 .name {
   text-align: right;
@@ -124,6 +147,11 @@ a:hover {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
+@media screen and (max-width: 680px) {
+  .access {
+    padding: 32px;
+  }
+}
 .access dt {
   margin-bottom: 16px;
   font-size: 20px;
@@ -131,6 +159,14 @@ a:hover {
 }
 .access iframe {
   margin-top: 24px;
+  width: 520px;
+  height: 300px;
+}
+@media screen and (max-width: 680px) {
+  .access iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
 .contact {
   margin-top: 52px;
