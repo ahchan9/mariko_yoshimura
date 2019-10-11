@@ -58,19 +58,28 @@
 .intro {
   text-align: center;
   font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 52px;
   @media screen and (max-width:@sp-small) {
     font-size: 14px;
   }
   p {
-    font-size: 24px;
+    font-family: @noto-serif;
+    font-weight: @weight-normal;
+    font-size: 26px;
     line-height: 1.4;
-    margin: 40px 0;
+    margin-bottom: 24px;
+    @media screen and (max-width:@sp) {
+      font-size: 24px;
+    }
     @media screen and (max-width:@sp-small) {
       font-size: 20px;
     }
   }
   dt {
+    letter-spacing: 1px;
     line-height: 2;
+    margin-top: 24px;
     &::before,
     &::after {
       content: '-';
@@ -78,14 +87,13 @@
     }
   }
   dd {
+    letter-spacing: 1px;
     line-height: 1.8;
-    &:nth-child(2n) {
-      margin-bottom: 40px;
-    }
   }
 }
 // メッセージ
 .write {
+  font-family: @noto-serif;
   padding: 0 10px;
   background-image: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 98%, @gray-light 98%, @gray-light 100% );
   background-size: 100% 2.4em;
